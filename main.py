@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 c1, c2 = st.columns([30,50])
 c2.title("PredictGuard: Predicting the disease based on symptoms")
-c1.image("C:/Users/KALPESH/Downloads/logo-removebg-preview.png")
+c1.image("logo-removebg-preview.png")
 # st.title("SymptomScan: Predicting the disease based on symptoms")
 # st.write(" ")
 # st.write(" ")
