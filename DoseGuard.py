@@ -1,8 +1,7 @@
 import streamlit as st
 import threading
 import time
-import tkinter as tk
-from tkinter import messagebox
+
 from pushbullet import Pushbullet  # Import the Pushbullet library
 
 # Function to display the medicine adherence tracker
@@ -10,7 +9,7 @@ def medicine_adherence_tracker():
     c1, c2 = st.columns([30, 50])
     c2.title("DoseGuard: Sends Timely Medication Reminders")
     c1.image("logo-removebg-preview.png")
-
+    st.chat_input("Medicine Adherence Tracker")
 
 
     # User input for medicines
@@ -37,12 +36,7 @@ def medicine_adherence_tracker():
         # Start thread to schedule reminders
         threading.Thread(target=schedule_reminders, args=(medicines, time_slots), daemon=True).start()  # Added daemon=True
 
-# Function to display pop-up reminders
-def show_reminder(message):
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    messagebox.showinfo("Medicine Reminder", message)
-    root.destroy()
+
 
 # Function to send reminder using Pushbullet
 def send_pushbullet_reminder(medicine):
