@@ -9,7 +9,6 @@ def medicine_adherence_tracker():
     c1, c2 = st.columns([30, 50])
     c2.title("DoseGuard: Sends Timely Medication Reminders")
     c1.image("logo-removebg-preview.png")
-    st.chat_input("Medicine Adherence Tracker")
 
 
     # User input for medicines
