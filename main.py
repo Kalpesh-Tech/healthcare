@@ -24,7 +24,7 @@ def main():
     # st.write(" ")
     if query:
         model = create_gen_model()
-        var = f"I'm experiencing some symptoms like {query} While I can't expect a diagnosis from you, can you help me find disease name from some reliable resources online? If you found disease name only give that name. Not give resource name. Give answer in one line"
+        var = f"I'm experiencing some symptoms like {query} While I can't expect a diagnosis from you, can you help me find disease name from some reliable resources online? If you found disease name only give that name. Not give resource name. Give answer in one line. Also give me suggestions that what can be the causes, suggest some precautions to be taken by the patient"
         response = model.generate_content(var)
         st.header("Disease Predicted:")
         st.header(response.text)
