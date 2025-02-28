@@ -3,7 +3,7 @@ import google.generativeai as genai
 import requests
 
 # Configure Google Generative AI (provide your own API key)
-genai.configure(api_key="AIzaSyC5WKGH75glm-gkNHNjZEXgCfbpIWSEiFQ")
+genai.configure(api_key="AIzaSyA6OoC5r1E2tV4cyRxRwU2NLxIROImY0fw")
 
 
 # Function to get emergency information from Gemini
