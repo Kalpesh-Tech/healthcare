@@ -8,7 +8,7 @@ genai.configure(api_key="AIzaSyA6OoC5r1E2tV4cyRxRwU2NLxIROImY0fw")
 
 # Function to get emergency information from Gemini
 def get_emergency_info(keyword, location):
-    model = genai.GenerativeModel('models/gemini-pro')
+    model = genai.GenerativeModel('models/gemini-1.5-pro')
 
     # Formulate the query for the AI model
     query = (f"I am experiencing a medical emergency related to {keyword}. "
