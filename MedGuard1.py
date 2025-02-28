@@ -6,7 +6,7 @@ c1, c2 = st.columns([30,50])
 
 c2.title("MedGuard: Medicine Information & Alternative Suggestions")
 c1.image("logo-removebg-preview.png")
-genai.configure(api_key="AIzaSyDNKm8FS-lnz_2fuPNV8hCLb9oPs5TL35k")
+genai.configure(api_key="AIzaSyA-Q_oWOSu8fHygFWhQhqfkpLdtpYfTUS8")
 var = ""
 var2 = ""
 
