@@ -7,7 +7,7 @@ genai.configure(api_key="AIzaSyARaKdiG56-K2pYRPsMG3ijyDgo-3Rfr9c")
 
 # Function to get emergency loan information from Gemini
 def get_loan_info(hospital_name):
-    model = genai.GenerativeModel('models/gemini-pro')
+    model = genai.GenerativeModel('models/gemini-1.5-pro')
 
     # Formulate the query for the AI model
     query = (f"I need emergency loan services because I'm at {hospital_name} and need funds for treatment. "
